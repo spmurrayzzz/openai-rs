@@ -3,7 +3,7 @@ use reqwest::header::{AUTHORIZATION, CONTENT_TYPE, HeaderMap, HeaderValue};
 use std::sync::Arc;
 
 use crate::error::Error;
-use crate::models::chat::{ChatCompletionRequest, ChatCompletionResponse};
+use crate::llm_api::chat::{ChatCompletionRequest, ChatCompletionResponse};
 
 #[derive(Clone)]
 pub struct OpenAIClient {

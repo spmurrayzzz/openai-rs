@@ -1,8 +1,8 @@
 mod client;
 pub mod error;
-pub mod models;
+pub mod llm_api;
 
-pub use crate::models::chat::{
+pub use crate::llm_api::chat::{
     ChatChoice, ChatCompletionRequest, ChatCompletionResponse, ChatMessage,
 };
 pub use client::OpenAIClient;
