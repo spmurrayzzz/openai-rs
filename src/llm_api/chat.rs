@@ -6,6 +6,8 @@ pub struct ChatMessage {
     pub content: String,
 }
 
+// TODO: eventually we should use a builder for this instead to reduce
+// verbosity a bit
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ChatCompletionRequest {
     pub model: String,
